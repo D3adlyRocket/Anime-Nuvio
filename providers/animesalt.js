@@ -3,7 +3,7 @@
 
 var TMDB_KEY = 'd80ba92bc7cefe3359668d30d06f3305';
 var TVDB_API_KEY = '248a0899-bd5b-4f58-a4db-9900c4ef0dae';
-var BASE = 'https://animesalt.link';
+var BASE = 'https://animesalt.to';
 var CDN = 'https://as-cdn21.top';
 var UA =
   'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36';
@@ -164,7 +164,7 @@ function searchSite(title, mediaType, year) {
     while ((articleMatch = articleRegex.exec(searchHtml)) !== null) {
       var articleHtml = articleMatch[1];
       var linkMatch = articleHtml.match(
-        /href="(https:\/\/animesalt\.link\/(series|movies)\/([^\/\"]+)\/?)\"/,
+        /href="(https:\/\/animesalt\.to\/(series|movies)\/([^\/\"]+)\/?)\"/,
       );
       var titleMatch = articleHtml.match(/class="entry-title"[^>]*>([^<]+)</);
       var yearMatch = articleHtml.match(/class="year"[^>]*>(\d{4})</);
@@ -240,7 +240,7 @@ function searchSite(title, mediaType, year) {
 
 function getEpisodeUrlFromHtml(html, season, episode) {
   var epRegex = new RegExp(
-    'href="(https://animesalt\\.link/episode/[^"]*' +
+    'href="(https://animesalt\\.to/episode/[^"]*' +
       season +
       'x' +
       episode +
