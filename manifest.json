@@ -57,6 +57,19 @@
       "contentLanguage": ["pt", "ja"]
     },
     {
+      "id": "animesfhd",
+      "name": "AnimesFHD",
+      "description": "Brazilian anime with Portuguese subtitles and dubbing via the public AnimesFHD API",
+      "version": "1.0.0",
+      "author": "animesfhd",
+      "supportedTypes": ["movie", "tv"],
+      "filename": "providers/animesfhd.js",
+      "enabled": true,
+      "formats": ["mp4", "m3u8"],
+      "logo": "https://animesfhd.net/favicon.ico",
+      "contentLanguage": ["pt", "ja"]
+    },
+    {
       "id": "animekai",
       "name": "AnimeKai",
       "description": "AnimeKai TV episodes via AnimeKai servers",
